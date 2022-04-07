@@ -1,0 +1,37 @@
+<setGameWidget>:
+    orientation: 'vertical'    
+    Carousel:
+        id: carousel
+        BoxLayout:
+            id: boxGame1          
+        BoxLayout:
+            id: boxGame2  
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint_y: .25
+        Label:
+            id: jitterLabel
+            text: 'Your JITTER = 0ms'
+            font_size: 35
+        Slider:
+            id: slide
+            orientation: 'horizontal'
+            min: 0
+            max: 1
+            step: 0.01
+            value: 0.5
+    BoxLayout:
+        size_hint_y: 0.125
+        orientation: 'horizontal'
+        Label:
+            text: '<-Synchronized'
+            font_size: 20
+        Label:
+            text: 'Raw->'
+            font_size: 20
+    BoxLayout:
+        size_hint_y: 0.125
+        Button:
+            text: 'TAP HERE'
+            background_color: (0.5,0.5,1,1)
+            on_release: root.recallplot()
