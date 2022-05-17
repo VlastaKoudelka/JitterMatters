@@ -4,6 +4,27 @@
         id: carousel
         BoxLayout:
             orientation:'vertical'
+            id: title
+            RstDocument:
+                source: 'title.rst'
+                size_hint_y:0.95
+            BoxLayout:
+                orientation:'horizontal'
+                size_hint_y:0.05
+                Button:
+                    size_hint_x: 0.5
+                    width: self.height
+                    text: 'Prev'
+                    on_release: carousel.load_previous()
+                    background_color: (0.5,0.5,1,1)
+                Button:
+                    size_hint_x: 0.5
+                    width: self.height
+                    text: 'Next'
+                    on_release: carousel.load_next()
+                    background_color: (0.5,0.5,1,1)
+        BoxLayout:
+            orientation:'vertical'
             id: slide1
             RstDocument:
                 source: 'slide1.rst'
@@ -16,11 +37,13 @@
                     width: self.height
                     text: 'Prev'
                     on_release: carousel.load_previous()
+                    background_color: (0.5,0.5,1,1)
                 Button:
                     size_hint_x: 0.5
                     width: self.height
                     text: 'Next'
                     on_release: carousel.load_next()
+                    background_color: (0.5,0.5,1,1)
                 
         BoxLayout:
             orientation:'vertical'

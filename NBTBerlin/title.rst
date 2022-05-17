@@ -1,0 +1,12 @@
+==============================================================
+[size=50]JitterMatters: A game for reproducible science[/size]
+==============================================================
+[size=30] [/size]
+
+[size=30] Vlastimil Koudelka, Jan Hubeny, and Cyril Kaplan[/size]
+
+[size=30][i]  National Institute of Mental Health in Klecany[/i][/size]
+
+[size=30] [/size]
+
+[size=30] International Forum on Neural Engineering & Brain Technologies[/size]
