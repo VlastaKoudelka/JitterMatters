@@ -94,6 +94,6 @@ class jittermattersApp(App):
         
 
 if __name__ == "__main__":
-    Window.size = (640,480)
+    #Window.size = (640,480)
     Window.fullscreen = False
     jittermattersApp().run()

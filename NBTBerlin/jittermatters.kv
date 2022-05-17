@@ -43,8 +43,7 @@
                     width: self.height
                     text: 'Next'
                     on_release: carousel.load_next()
-                    background_color: (0.5,0.5,1,1)
-                
+                    background_color: (0.5,0.5,1,1)                
         BoxLayout:
             orientation:'vertical'
             id: slide2
@@ -165,6 +164,102 @@
                 Image:
                     source: 'synchroDevice.png'
                     size_hint: (0.5,0.5)
-                    pos_hint: {"x":0.5,"y":0.2} 
+                    pos_hint: {"x":0.5,"y":0.2}
+        Accordion:
+            orientation: 'horizontal'
+            AccordionItem:
+                title: 'Load your profile'
+                BoxLayout:
+                    orientation: 'vertical'
+                    FileChooserListView:
+                        id: filechooser
+                        size_hint_y: 0.9
+                    BoxLayout:
+                        size_hint_y: 0.1
+                        orientation: 'horizontal'
+                        Button:
+                            text:'Load'
+                            #center: self.parent.center TODO - center the button
+                            size_hint: None, None
+                            size: 75, 50
+                            background_color: (0.5,1,0.5,1)   
+                            on_release: root.load(filechooser.path, filechooser.selection)
+            AccordionItem:
+                title: 'Customize Setting'
+                GridLayout:
+                    cols: 4
+                    Label:
+                    Label:            
+                        text: 'LSL'
+                        font_size: 20
+                    Label:
+                        text: 'ECI'
+                        font_size: 20
+                    Label:
+                        text: 'TTL'
+                        font_size: 20
+                    Label:
+                        text: 'Screen sync'
+                        font_size: 20
+                    CheckBox:
+                        id: LSLscrCheck
+                    CheckBox:
+                        id: ECIscrCheck
+                    CheckBox:
+                        id: TTLscrCheck
+                    Label:
+                        text: 'Audio sync'
+                        font_size: 20
+                    CheckBox:
+                        id: LSLaudCheck
+                    CheckBox:
+                        id: ECIaudCheck
+                    CheckBox:
+                        id: TTLaudCheck
+                    Label:
+                        text: 'Response sync'
+                        font_size: 20
+                    CheckBox:
+                        id: LSLresCheck
+                    CheckBox:
+                        id: ECIresCheck
+                    CheckBox:
+                        id: TTLresCheck
+            AccordionItem:
+                title: 'Checklist'
+                Label:
+                    id: checkList
+                    text: 'a checklist loaded from your profile and test the settings...'
+            AccordionItem:
+                title:'Run'
+                GridLayout:
+                    cols: 3
+                    Label:
+                        text: 'LSL'
+                        font_size: 20
+                    Label:
+                        text: 'ECI'
+                        font_size: 20
+                    Label:
+                        text: 'TTL'
+                        font_size: 20 
+                    CheckBox:
+                        active: False #LSLscrCheck.active or LSLaudCheck.active or LSLresCheck.active
+                    CheckBox:
+                        id: ECIcheck
+                        active: False #ECIscrCheck.active or ECIaudCheck.active or ECIresCheck.active
+                    CheckBox:
+                        active: False #TTLscrCheck.active or TTLaudCheck.active or TTLresCheck.active                
+                    Button:
+                        text:'Connect'
+                        background_color: (0.5,1,0.5,1)    
+                    Button:
+                        text:'Test'
+                        background_color: (0.5,0.5,1,1)
+                    Button:
+                        id: btnExit
+                        text: "Exit"
+                        background_color: (1,0.2,0.2,1)                                           
+                        
 
-            
+                        

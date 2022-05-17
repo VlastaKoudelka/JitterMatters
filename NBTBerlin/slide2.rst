@@ -15,4 +15,4 @@
 
 [size=30] [/size]
 
-[size=30] - Two groups of researchers: geeks and satisfied researchers[/size]
+[size=30] - Diseminate and solve the problem[/size]
