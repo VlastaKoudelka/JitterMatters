@@ -1,5 +1,5 @@
 ==============================================================
-[size=50]JitterMatters: A game for reproducible science[/size]
+[size=50]JitterMatters: A game for reproducible EEG[/size]
 ==============================================================
 [size=30] [/size]
 

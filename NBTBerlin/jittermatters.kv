@@ -49,7 +49,7 @@
             orientation:'vertical'
             id: slide2
             RstDocument:
-                source: 'slide1.rst'
+                source: 'slide2.rst'
                 size_hint_y:0.95
             BoxLayout:
                 orientation:'horizontal'
@@ -59,12 +59,13 @@
                     width: self.height
                     text: 'Prev'
                     on_release: carousel.load_previous()
+                    background_color: (0.5,0.5,1,1)
                 Button:
                     size_hint_x: 0.5
                     width: self.height
                     text: 'Next'
                     on_release: carousel.load_next()
-
+                    background_color: (0.5,0.5,1,1)
         BoxLayout:
             id: game
             orientation: 'vertical'
@@ -102,3 +103,68 @@
                         text: 'TAP HERE'
                         background_color: (0.5,0.5,1,1)
                         on_release: root.recallplot()
+        FloatLayout:
+            orientation:'vertical'
+            id: slide3
+            RstDocument:
+                source: 'slide3.rst'
+                size_hint: (1,0.95)
+                pos_hint:{"top":1}
+            BoxLayout:
+                orientation:'horizontal'
+                size_hint_y:0.05
+                Button:
+                    size_hint_x: 0.5
+                    width: self.height
+                    text: 'Prev'
+                    on_release: carousel.load_previous()
+                    background_color: (0.5,0.5,1,1)
+                Button:
+                    size_hint_x: 0.5
+                    width: self.height
+                    text: 'Next'
+                    on_release: carousel.load_next()
+                    background_color: (0.5,0.5,1,1)
+            FloatLayout:
+                Image:
+                    source: 'aPowASSROrig.png'
+                    size_hint: (0.4,0.4)
+                    pos_hint: {"x":0,"y":0.1} 
+            FloatLayout:
+                Image:
+                    source: 'PowASSRJitter_2ms.png'
+                    size_hint: (0.4,0.4)
+                    pos_hint: {"x":0.3,"y":0.1} 
+            FloatLayout:
+                Image:
+                    source: 'PowASSRJitter_4ms.png'
+                    size_hint: (0.4,0.4)
+                    pos_hint: {"x":0.6,"y":0.1} 
+        FloatLayout:
+            id: slide4                       
+            RstDocument:
+                source: 'slide4.rst'
+                size_hint: (1,0.95)
+                pos_hint:{"top":1}
+            BoxLayout:
+                orientation:'horizontal'
+                size_hint_y:0.05
+                Button:
+                    size_hint_x: 0.5
+                    width: self.height
+                    text: 'Prev'
+                    on_release: carousel.load_previous()
+                    background_color: (0.5,0.5,1,1)
+                Button:
+                    size_hint_x: 0.5
+                    width: self.height
+                    text: 'Next'
+                    on_release: carousel.load_next()
+                    background_color: (0.5,0.5,1,1)
+            FloatLayout:
+                Image:
+                    source: 'synchroDevice.png'
+                    size_hint: (0.5,0.5)
+                    pos_hint: {"x":0.5,"y":0.2} 
+
+            

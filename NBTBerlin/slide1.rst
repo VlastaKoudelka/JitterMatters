@@ -1,6 +1,6 @@
-============
-Introduction
-============
+============================
+[size=40]Introduction[/size]
+============================
 [size=30] [/size]
 
 [size=30] - we are guys from a NIMH lab and we have been observing jitter effects on the EEG data and our goal is to get reproducible EEG results[/size]
