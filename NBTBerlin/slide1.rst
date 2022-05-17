@@ -21,6 +21,6 @@
 
 [size=15] [/size]
 
-[size=35] - Bottleneck: Uncertainity in timing corrupt the data [/size]
+[size=35] - Bottleneck: Uncertainty in timing corrupt the data [/size]
 
 [size=35] and brings frustration from repetitive tasks  [/size]
