@@ -1,4 +1,5 @@
 from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.floatlayout import FloatLayout
 from kivy.app import App
 from kivy.garden.matplotlib.backend_kivyagg import FigureCanvasKivyAgg
 import numpy as np
@@ -27,13 +28,7 @@ class setGameWidget(BoxLayout):
         super().__init__(**kwargs)
         global tfrData, figLine, axLine, figIm, axIm
         #define a graph
-        x = np.random.rand(20,1)
-        y = np.random.rand(20,1)
-        axLine.plot(x,y)
-        axLine.axis('off')
-               
-        boxGame1 = self.ids.boxGame1
-        boxGame1.add_widget(FigureCanvasKivyAgg(figLine))
+
         
         #define an image
         tfrData = np.flip(tfrData,2)
@@ -73,15 +68,7 @@ class setGameWidget(BoxLayout):
             jitterLabel.text = 'Jitter = ' + str(jitter) + ' ms'     
         
         #update the LinePlot
-        boxGame1 = self.ids.boxGame1
-        slide = self.ids.slide
-        x = np.random.rand(int(jitter),1)
-        y = np.random.rand(int(jitter),1)
-        axLine.clear()
-        boxGame1.clear_widgets()
-        axLine.plot(x,y)
-        axLine.axis('off')
-        boxGame1.add_widget(FigureCanvasKivyAgg(figLine))
+
         
         #update the imshow
         if jitter > 10:

@@ -1,0 +1,81 @@
+<setGameWidget>:
+    orientation: 'vertical'    
+    Carousel:
+        id: carousel
+        BoxLayout:
+            orientation:'vertical'
+            id: slide1
+            RstDocument:
+                source: 'slide1.rst'
+                size_hint_y:0.95
+            BoxLayout:
+                orientation:'horizontal'
+                size_hint_y:0.05
+                Button:
+                    size_hint_x: 0.5
+                    width: self.height
+                    text: 'Prev'
+                    on_release: carousel.load_previous()
+                Button:
+                    size_hint_x: 0.5
+                    width: self.height
+                    text: 'Next'
+                    on_release: carousel.load_next()
+                
+        BoxLayout:
+            orientation:'vertical'
+            id: slide2
+            RstDocument:
+                source: 'slide1.rst'
+                size_hint_y:0.95
+            BoxLayout:
+                orientation:'horizontal'
+                size_hint_y:0.05
+                Button:
+                    size_hint_x: 0.5
+                    width: self.height
+                    text: 'Prev'
+                    on_release: carousel.load_previous()
+                Button:
+                    size_hint_x: 0.5
+                    width: self.height
+                    text: 'Next'
+                    on_release: carousel.load_next()
+
+        BoxLayout:
+            id: game
+            orientation: 'vertical'
+            BoxLayout:
+                id: boxGame2  
+                size_hint_y:0.7
+            BoxLayout:
+                orientation: 'vertical'
+                size_hint_y: 0.3
+                Label:
+                    id: jitterLabel
+                    text: 'Your JITTER = 0ms'
+                    font_size: 35
+                    size_hint_y:0.2
+                Slider:
+                    id: slide
+                    orientation: 'horizontal'
+                    min: 0
+                    max: 1
+                    step: 0.01
+                    value: 0.5
+                    size_hint_y:0.2
+                BoxLayout:
+                    size_hint_y: 0.2
+                    orientation: 'horizontal'
+                    Label:
+                        text: '<-Synchronized'
+                        font_size: 20
+                    Label:
+                        text: 'Raw->'
+                        font_size: 20
+                BoxLayout:
+                    size_hint_y: 0.3
+                    Button:
+                        text: 'TAP HERE'
+                        background_color: (0.5,0.5,1,1)
+                        on_release: root.recallplot()
