@@ -9,4 +9,4 @@
 
 [size=30] [/size]
 
-[size=30] International Forum on Neural Engineering & Brain Technologies[/size]
+[size=30] 17.5.-18.5. 2022 International Forum on Neural Engineering & Brain Technologies[/size]

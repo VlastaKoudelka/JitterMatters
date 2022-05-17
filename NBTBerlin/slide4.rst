@@ -1,22 +1,22 @@
 ======================================================
-[size=40]Synchronization device is our solution[/size]
+[size=50]Synchronization device is our solution[/size]
 ======================================================
-[size=30] [/size]
+[size=15] [/size]
 
-[size=30] - Independent synchronization device for neuroscientific aplications[/size]
+[size=35] - Independent synchronization device for neuroscientific applications[/size]
 
-[size=30] [/size]
+[size=15] [/size]
 
-[size=30] - Lab Streaming Layer Protocol compatible[/size]
+[size=35] - Lab Streaming Layer Protocol compatible[/size]
 
-[size=30] [/size]
+[size=15] [/size]
 
-[size=30] - Video, Audio, Four buttons, TTL[/size]
+[size=35] - Video, Audio, Four buttons, TTL[/size]
 
-[size=30] [/size]
+[size=15] [/size]
 
-[size=30] - USB emulator[/size]
+[size=35] - USB keyboard emulator[/size]
 
-[size=30] [/size]
+[size=15] [/size]
 
-[size=30] - Jitter > 1ms[/size]
+[size=35] - Jitter > 1ms[/size]
